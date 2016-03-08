@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icon/systemIcon.png</file>
+        <file>Icon/删除.png</file>
+        <file>Icon/添加.png</file>
+    </qresource>
+    <qresource prefix="/music">
+        <file>music/风筝误 - 刘珂矣.mp3</file>
+    </qresource>
+</RCC>
