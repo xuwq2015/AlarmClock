@@ -92,7 +92,7 @@ void TimerManage::onTimerTimeout(QString myName)
 
 void TimerManage::onceTimeout(int index, QString myName)
 {
-    MusicPlayer player(QString("定时器超时：" + myName), this);
+    MusicPlayer player(QString("定时器超时：" + myName), NULL);
     if (player.exec()) {
         timerList.at(index).myTimer->~MyTimer();
         timerList.removeAt(index);
