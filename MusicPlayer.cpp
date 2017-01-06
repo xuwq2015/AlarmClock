@@ -33,13 +33,13 @@ MusicPlayer::MusicPlayer(QString contentInfo, QWidget *parent) : QDialog(parent)
 
 void MusicPlayer::playFile(const QString &filePath)
 {
-    mediaPlayer.setMedia(QUrl::fromLocalFile(filePath));
-    mediaPlayer.play();
+    mediaPlayer->setMedia(QUrl::fromLocalFile(filePath));
+    mediaPlayer->play();
 }
 
 void MusicPlayer::updateState()
 {
-    mediaPlayer.play();
+    mediaPlayer->play();
 }
 
 void MusicPlayer::clickedFulfilButton()

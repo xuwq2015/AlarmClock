@@ -19,6 +19,7 @@ class MusicPlayer : public QDialog
     Q_OBJECT
 public:
     MusicPlayer(QString contentInfo, QWidget *parent = 0);
+    void clickedCancelButton();
 private:
     QLabel *contentLabel;
     QPushButton *fulfilButton;//完成按钮
